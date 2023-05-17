@@ -1,3 +1,4 @@
+import pdb
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -27,10 +28,13 @@ def open_chrome():
   browser.find_element(By.ID, "J_SelectAll1").click()
 
   # 点击结算
+  browser.find_element(By.ID, "J_Go").click()
 
   # 勾选协议
 
   # 确定结算
+
+  pdb.set_trace()
 
 
 
